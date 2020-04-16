@@ -2,25 +2,20 @@
 
 int main()
 {
-    int i, n, m[100];
+    int elements, input;
+    scanf("%d", &elements);
 
-    scanf("%d", &n);
+    while (1)
+    {
+        scanf("%d", &input);
 
-    for(i = 0; i < n; i++) {
-        scanf("%d", &m[i]);
-
+        if(!(input ^ 1))
+        {
+            printf("HARD");
+            return 0;
+        }
     }
-    printf("%d\n", m);
-
-    if(m == 1) {
-        printf("EASY");
-    }
-
-    else {
-        printf("HARD");
-    }
-
+    printf("EASY");
 
     return 0;
-
 }
