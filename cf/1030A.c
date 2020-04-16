@@ -5,7 +5,7 @@ int main()
     int elements, input;
     scanf("%d", &elements);
 
-    while (1)
+    while (elements--)
     {
         scanf("%d", &input);
 
